@@ -14,7 +14,7 @@
 
         header {
             background-color: #3498db;
-            color: #fff;
+            color: #fff; /* Ensure white text has enough contrast */
             padding: 20px;
             text-align: center;
         }
@@ -94,7 +94,7 @@
 
         footer {
             background-color: #3498db;
-            color: #fff;
+            color: #fff; /* Ensure white text has enough contrast */
             padding: 10px;
             text-align: center;
         }
@@ -114,7 +114,8 @@
                     <span id="like-count">0 Likes</span>
                 </div>
                 <div class="comment-container">
-                    <em class="fas fa-comment"></em> <span id="comment-count">0 Comments</span>
+                    <em class="fas fa-comment"> </em>
+                    <span id="comment-count">0 Comments</span>
                 </div>
             </div>
             <div class="comments">
@@ -122,15 +123,13 @@
                     </ul>
                 </div>
             <form id="comment-form">
-                <label for="comment">Leave a comment...</label> <textarea name="comment" id="comment" placeholder=""></textarea>
+                <label for="comment">Leave a comment...</label>  <textarea name="comment" id="comment" placeholder=""></textarea>
                 <button type="submit">Comment</button>
             </form>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 SnapShare</p>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
     </footer>
     <script>
-        const likeBtn = document.getElementById('like-btn');
+        const likeBtn = document.getElementById('like-btn
